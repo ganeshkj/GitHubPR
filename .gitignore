@@ -1,0 +1,13 @@
+venv/
+venv1/
+venv*/
+.idea/
+GitHubPR.egg-info/
+build/
+dist/
+GitHubPR/config.ini
+GitHubPR/__pycache__/
+*.ini
+*/*.ini
+*.txt
+*/*.txt

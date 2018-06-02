@@ -15,12 +15,12 @@ class S(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/':
             self._set_headers()
-            msg="<html><body><h1>Welcome to Sample Page</h1></body></html>".encode()
+            msg="<html><body><h1>Welcome to Sample Page</h1></body></html>"
             # msg=GitHubPR.fetchPRstatus('ganeshkj','TestPR')
             self.wfile.write(msg.encode())
         else:
             self._set_headers(404)
-            msg="<html><body><h1>404.! Page Not Found</h1></body></html>".encode()
+            msg="<html><body><h1>404.! Page Not Found</h1></body></html>"
             self.wfile.write(msg.encode())
 
     def do_HEAD(self):
